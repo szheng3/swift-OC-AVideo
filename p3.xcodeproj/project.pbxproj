@@ -15,6 +15,8 @@
 		223259072448B20900419139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223259052448B20900419139 /* LaunchScreen.storyboard */; };
 		223259122448B20900419139 /* p3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223259112448B20900419139 /* p3Tests.swift */; };
 		2232591D2448B20900419139 /* p3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232591C2448B20900419139 /* p3UITests.swift */; };
+		2232592F2448B2B800419139 /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2232592B2448B2B700419139 /* AAPLPreviewView.m */; };
+		223259302448B2B800419139 /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2232592D2448B2B800419139 /* AAPLCameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		223259182448B20900419139 /* p3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = p3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2232591C2448B20900419139 /* p3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = p3UITests.swift; sourceTree = "<group>"; };
 		2232591E2448B20900419139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2232592A2448B2B700419139 /* p3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "p3-Bridging-Header.h"; sourceTree = "<group>"; };
+		2232592B2448B2B700419139 /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
+		2232592C2448B2B700419139 /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
+		2232592D2448B2B800419139 /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
+		2232592E2448B2B800419139 /* AAPLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +106,10 @@
 		223258F92448B20800419139 /* p3 */ = {
 			isa = PBXGroup;
 			children = (
+				2232592E2448B2B800419139 /* AAPLCameraViewController.h */,
+				2232592D2448B2B800419139 /* AAPLCameraViewController.m */,
+				2232592C2448B2B700419139 /* AAPLPreviewView.h */,
+				2232592B2448B2B700419139 /* AAPLPreviewView.m */,
 				223258FA2448B20800419139 /* AppDelegate.swift */,
 				223258FC2448B20800419139 /* SceneDelegate.swift */,
 				223258FE2448B20800419139 /* ViewController.swift */,
@@ -106,6 +117,7 @@
 				223259032448B20900419139 /* Assets.xcassets */,
 				223259052448B20900419139 /* LaunchScreen.storyboard */,
 				223259082448B20900419139 /* Info.plist */,
+				2232592A2448B2B700419139 /* p3-Bridging-Header.h */,
 			);
 			path = p3;
 			sourceTree = "<group>";
@@ -196,6 +208,7 @@
 				TargetAttributes = {
 					223258F62448B20800419139 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					2232590C2448B20900419139 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -262,6 +275,8 @@
 				223258FF2448B20800419139 /* ViewController.swift in Sources */,
 				223258FB2448B20800419139 /* AppDelegate.swift in Sources */,
 				223258FD2448B20800419139 /* SceneDelegate.swift in Sources */,
+				2232592F2448B2B800419139 /* AAPLPreviewView.m in Sources */,
+				223259302448B2B800419139 /* AAPLCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,15 +449,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DD6SSBWECL;
 				INFOPLIST_FILE = p3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Practice.p3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "p3/p3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,15 +471,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DD6SSBWECL;
 				INFOPLIST_FILE = p3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Practice.p3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "p3/p3-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

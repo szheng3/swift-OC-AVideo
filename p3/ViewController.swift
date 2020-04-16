@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: AAPLCameraViewController {
+
+    @IBOutlet weak var video: AAPLPreviewView!
 
     override func viewDidLoad() {
+        previewView = video
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
