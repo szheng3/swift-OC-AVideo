@@ -15,5 +15,6 @@ View controller for camera interface.
 @interface AAPLCameraViewController : UIViewController
 @property (nonatomic, weak) AAPLPreviewView *previewView;
 @property id<AAPLDelegate> delegate;
+- (void)toggleMovieRecording;
 
 @end

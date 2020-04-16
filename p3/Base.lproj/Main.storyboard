@@ -21,6 +21,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs4-W1-nxj">
                                         <rect key="frame" x="182.5" y="699" width="49" height="30"/>
                                         <state key="normal" title="Record"/>
+                                        <connections>
+                                            <action selector="RecordBthPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8n-vx-9eD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc6-Ur-t6j">
                                         <rect key="frame" x="320" y="24" width="54" height="30"/>

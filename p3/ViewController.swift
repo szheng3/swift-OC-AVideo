@@ -14,7 +14,10 @@ class ViewController: AAPLCameraViewController, AAPLDelegate {
     @IBOutlet weak var video: AAPLPreviewView!
 
     @IBOutlet weak var recordUI: UIButton!
-
+    @IBAction func RecordBthPress(_ sender: Any) {
+        toggleMovieRecording()
+    }
+    
     override func viewDidLoad() {
         delegate = self
         previewView = video
