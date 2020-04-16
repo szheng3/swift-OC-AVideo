@@ -8,4 +8,6 @@
 @protocol AAPLDelegate <NSObject>
 -(void)shouldEnableRecordUI:(bool)enable;
 -(void)shouldEnableCameraUI:(bool)enable;
+-(void)videoRecordingComplete:(NSURL*)videoURL;
+
 @end

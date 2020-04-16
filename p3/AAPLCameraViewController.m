@@ -656,6 +656,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 		success = [error.userInfo[AVErrorRecordingSuccessfullyFinishedKey] boolValue];
 	}
 	if ( success ) {
+	    [self.delegate videoRecordingComplete:outputFileURL];
 		// Check authorization status.
 		[PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {
 			if ( status == PHAuthorizationStatusAuthorized ) {

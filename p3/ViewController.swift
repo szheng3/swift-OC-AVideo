@@ -37,5 +37,9 @@ class ViewController: AAPLCameraViewController, AAPLDelegate {
     @IBAction func CameraBtnPress(_ sender: Any) {
         changeCamera()
     }
+
+    func videoRecordingComplete(_ videoURL: URL!) {
+        print(videoURL)
+    }
 }
 
