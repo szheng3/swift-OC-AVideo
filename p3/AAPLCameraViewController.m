@@ -11,6 +11,7 @@ View controller for camera interface.
 
 #import "AAPLCameraViewController.h"
 #import "AAPLPreviewView.h"
+#import "AAPLDelegate.h"
 
 static void * CapturingStillImageContext = &CapturingStillImageContext;
 static void * SessionRunningContext = &SessionRunningContext;
@@ -51,6 +52,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 	[super viewDidLoad];
 
 	// Disable UI. The UI is enabled if and only if the session starts running.
+	[self.delegate shouldEnableRecordUI:NO];
 	self.cameraButton.enabled = NO;
 	self.recordButton.enabled = NO;
 	self.stillButton.enabled = NO;

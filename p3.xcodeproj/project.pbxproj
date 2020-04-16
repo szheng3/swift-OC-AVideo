@@ -56,6 +56,7 @@
 		2232592C2448B2B700419139 /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
 		2232592D2448B2B800419139 /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
 		2232592E2448B2B800419139 /* AAPLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraViewController.h; sourceTree = "<group>"; };
+		685985456BC3D505639EF237 /* AAPLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +119,7 @@
 				223259052448B20900419139 /* LaunchScreen.storyboard */,
 				223259082448B20900419139 /* Info.plist */,
 				2232592A2448B2B700419139 /* p3-Bridging-Header.h */,
+				685985456BC3D505639EF237 /* AAPLDelegate.h */,
 			);
 			path = p3;
 			sourceTree = "<group>";

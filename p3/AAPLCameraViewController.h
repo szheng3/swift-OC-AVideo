@@ -9,9 +9,11 @@ View controller for camera interface.
 @import UIKit;
 
 @class AAPLPreviewView;
+@protocol AAPLDelegate;
+
 
 @interface AAPLCameraViewController : UIViewController
 @property (nonatomic, weak) AAPLPreviewView *previewView;
-
+@property id<AAPLDelegate> delegate;
 
 @end
