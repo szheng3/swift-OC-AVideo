@@ -29,6 +29,9 @@
                                         <rect key="frame" x="320" y="24" width="54" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <action selector="CameraBtnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wnz-YU-ay3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

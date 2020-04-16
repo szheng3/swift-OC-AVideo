@@ -492,7 +492,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 	} );
 }
 
-- (IBAction)changeCamera:(id)sender
+- (void)changeCamera
 {
 	[self.delegate shouldEnableCameraUI:NO];
     [self.delegate shouldEnableRecordUI:NO];

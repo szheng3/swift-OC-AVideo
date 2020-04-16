@@ -13,6 +13,7 @@ class ViewController: AAPLCameraViewController, AAPLDelegate {
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var video: AAPLPreviewView!
 
+
     @IBOutlet weak var recordUI: UIButton!
     @IBAction func RecordBthPress(_ sender: Any) {
         toggleMovieRecording()
@@ -32,6 +33,9 @@ class ViewController: AAPLCameraViewController, AAPLDelegate {
     func shouldEnableCameraUI(_ enable: Bool) {
         cameraButton.isEnabled = enable
 
+    }
+    @IBAction func CameraBtnPress(_ sender: Any) {
+        changeCamera()
     }
 }
 
