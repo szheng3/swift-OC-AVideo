@@ -17,7 +17,22 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNj-om-tf0" customClass="AAPLPreviewView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs4-W1-nxj">
+                                        <rect key="frame" x="182.5" y="699" width="49" height="30"/>
+                                        <state key="normal" title="Record"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc6-Ur-t6j">
+                                        <rect key="frame" x="320" y="24" width="54" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Camera"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bs4-W1-nxj" secondAttribute="bottom" constant="89" id="IcB-eX-2qe"/>
+                                    <constraint firstItem="Bs4-W1-nxj" firstAttribute="centerX" secondItem="hNj-om-tf0" secondAttribute="centerX" id="Zgb-WS-dJJ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -30,6 +45,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="pc6-Ur-t6j" id="eyN-G0-OFM"/>
+                        <outlet property="recordUI" destination="Bs4-W1-nxj" id="Pye-bA-d7G"/>
                         <outlet property="video" destination="hNj-om-tf0" id="tkd-Tr-0xd"/>
                     </connections>
                 </viewController>

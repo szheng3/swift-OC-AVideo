@@ -8,19 +8,27 @@
 
 import UIKit
 
-class ViewController: AAPLCameraViewController,AAPLDelegate {
+class ViewController: AAPLCameraViewController, AAPLDelegate {
 
+    @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var video: AAPLPreviewView!
 
+    @IBOutlet weak var recordUI: UIButton!
+
     override func viewDidLoad() {
-        delegate=self
+        delegate = self
         previewView = video
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     func shouldEnableRecordUI(_ enable: Bool) {
-        print(enable)
+        recordUI.isEnabled = enable
+    }
+
+    func shouldEnableCameraUI(_ enable: Bool) {
+        cameraButton.isEnabled = enable
+
     }
 }
 

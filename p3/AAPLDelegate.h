@@ -7,4 +7,5 @@
 
 @protocol AAPLDelegate <NSObject>
 -(void)shouldEnableRecordUI:(bool)enable;
+-(void)shouldEnableCameraUI:(bool)enable;
 @end
